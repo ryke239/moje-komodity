@@ -1,0 +1,2 @@
+# moje-komodity
+moje-komodity
