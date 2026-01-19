@@ -1,30 +1,61 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8">
-  <title>Komodity – přehled</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Komodity – grafy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+.grafy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.grafy img {
+  max-width: 100%;
+  height: auto;
+}
+.zdroj {
+  margin-top: 10px;
+  font-size: 14px;
+}
+</style>
 </head>
 
-<body style="margin:0;padding:0;font-family:Arial, sans-serif;background:#fff;text-align:center;">
+<body>
 
-  <h1>Komodity online</h1>
+<h1>Komodity – online grafy</h1>
 
-  <!-- komodity_online start -->
-  <div id="komodity_online_main" style="padding:10px;text-align:center;">
-    <div id="komodity_online_head" style="white-space: nowrap;">
-      <a href="https://www.kurzy.cz/" 
-         title="Kurzy.cz - měny, akcie, finance, forex, komodity">
-        <img loading="lazy"
-             src="https://data.kurzy.cz/export/kurzy-125.gif"
-             style="border:0"
-             alt="Kurzy komodit">
-      </a>
-      <br>
-      <a href="https://www.kurzy.cz/komodity/">Zdroj: Kurzy.cz</a>
-    </div>
-  </div>
-  <!-- komodity_online end -->
+<div class="grafy">
+
+  <a href="https://www.kurzy.cz/komodity/zlato-graf-vyvoje-ceny/" title="Zlato">
+    <img loading="lazy"
+      src="https://data.kurzy.cz/komodity/grafy/zlato_ecbot-graf-cena-online5-w380.png"
+      alt="Zlato – graf ceny">
+  </a>
+
+  <a href="https://www.kurzy.cz/komodity/stribro-graf-vyvoje-ceny/" title="Stříbro">
+    <img loading="lazy"
+      src="https://data.kurzy.cz/komodity/grafy/stribro_ecbot-graf-cena-online5-w380.png"
+      alt="Stříbro – graf ceny">
+  </a>
+
+  <a href="https://www.kurzy.cz/komodity/bitcoin-graf-vyvoje-ceny/" title="Bitcoin">
+    <img loading="lazy"
+      src="https://data.kurzy.cz/komodity/grafy/bitcoin-graf-cena-online5-w380.png"
+      alt="Bitcoin – graf ceny">
+  </a>
+
+</div>
+
+<div class="zdroj">
+  Zdroj: <a href="https://www.kurzy.cz/komodity/">Kurzy.cz</a>
+</div>
 
 </body>
 </html>
